@@ -1,0 +1,22 @@
+.container{
+    display: inline-block;
+
+    font-size: 17px;
+    color: white;
+    letter-spacing: 5px;
+    font-family: monospace;
+}
+
+.type{
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 0;
+    animation: typing 1.5s steps(11) 1.5s forwards;
+}
+
+/* typing animation*/
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
