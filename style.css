@@ -1,37 +1,50 @@
-body{
-    background-image: url(pictures/coffee.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+.container{
+    margin: 0;
+    position: relative;
+    height: 100vh;
 }
 
-.container {
-    width: 500px;
-    height: 300px;
+#menu{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);       /* center the div element in the middle of page */
     
-    margin: 0 auto;
+    width: 500px;
+    height: 279px;
 }
 
-.blur {
-    background: rgba(0, 0, 0, 0.308); 
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+#search{
+    font-family: hack;
+    font-size: 13px;
+    color: #f9f8eb;
+
+    outline: none;
+    border: none;
+
+    padding: 15px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+#search:focus{
+    outline: none;
+    border: none;
 }
 
-.fadeAway{
-    animation: fadeout-down 1s forwards;
+.item{
+    font-family: hack;
+    font-size: 13px;
+    color: #818181;
+
+    padding: 11px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    cursor: pointer;
 }
-
-@keyframes fadeout-down {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(30px);
-    }
+.item:hover{
+    color: #f9f8eb;
 }
-
+.highlight{
+    color: #f9f8eb;
+}
