@@ -1,6 +1,6 @@
 #menu{
     width: 500px;
-    height: 279px;
+    height: 305px;
 }
 
 #search{
@@ -31,6 +31,7 @@
 
     padding: 11px;
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 0px;
     cursor: pointer;
 }
