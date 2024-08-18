@@ -1,0 +1,40 @@
+@font-face {
+    src: url(../fonts/Hack-Regular.ttf);
+    font-family: hack;
+}
+
+body {
+    background-image: url(../pictures/coffee.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    border-radius: 6px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: #00000099; 
+
+    backdrop-filter: blur(10px);
+
+    animation: fade-down .7s 0.2s backwards;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

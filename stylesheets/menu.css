@@ -1,23 +1,14 @@
-.container{
-    margin: 0;
-    position: relative;
-    height: 100vh;
-}
-
 #menu{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);       /* center the div element in the middle of page */
-    
     width: 500px;
     height: 279px;
 }
 
 #search{
+    width: 100%;
     font-family: hack;
     font-size: 13px;
     color: #f9f8eb;
+    -webkit-font-smoothing: antialiased;    /* experimental */
 
     outline: none;
     border: none;
@@ -36,6 +27,7 @@
     font-family: hack;
     font-size: 13px;
     color: #818181;
+    -webkit-font-smoothing: antialiased;    /* experimental */
 
     padding: 11px;
     padding-left: 15px;
