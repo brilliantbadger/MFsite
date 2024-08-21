@@ -33,11 +33,15 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
+
+/*
 .item:hover{
     color: #f9f8eb;
 }
+*/
+
 .highlight{
     color: #f9f8eb;
 }

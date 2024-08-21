@@ -33,11 +33,16 @@
     grid-row: 3;
 }
 
-.section{
-    background-color:rgb(78, 96, 110);
-
+.item{
     font-family: hack;
     font-size: 13px;
     color: #f9f8eb;
     -webkit-font-smoothing: antialiased;    /* experimental */
+
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.selected{
+    background-color: #818181;
 }

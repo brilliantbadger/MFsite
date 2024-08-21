@@ -20,8 +20,8 @@ body{
 
 .default{
     border-radius: 6px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    background: #00000099; 
+    box-shadow: 0 8px 64px 0 rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7); 
 
     backdrop-filter: blur(10px);
 

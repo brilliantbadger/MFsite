@@ -44,15 +44,15 @@ function display(items){
     }
 
     items.slice(mark, mark+max).forEach((item, index)=>{
-        const entry = document.createElement('div');
-        entry.classList.add('item');
-        entry.textContent = item;
+        const ghost = document.createElement('div');
+        ghost.classList.add('item');
+        ghost.textContent = item;
 
-        if (index == selected) {
-            entry.classList.add('highlight');
+        if(index==selected){
+            ghost.classList.add('highlight');
         }
 
-        list.appendChild(entry);
+        list.appendChild(ghost);
     });
 }
 
@@ -70,7 +70,7 @@ function keydown(event){
             break;
         case 'Enter':
             menu.classList.add('fadeout');
-            setTimeout(function() {
+            setTimeout(function(){
                 window.location.href = content[mark+selected] + '.html';
             }, 500);
             break;
